@@ -144,9 +144,9 @@
           representation enables a comprehensive understanding of each resume.
           We experiment with multiple machine learning models for
           classification, including Logistic Regression, Support Vector Machine
-          (SVM), Random Forest, and XGBoost. Model performance is evaluated
-          using accuracy, precision, recall, and F1-score. Among these, XGBoost
-          consistently shows robust performance across most metrics, making it a
+          (SVM), Clustering,Tree Based methods(Random Forest,AdaBoost,Gradient Boosting,HistGradientBoosting,Xgboost,LightBoost). Model performance is evaluated
+          using accuracy, precision, recall, and F1-score. Among these, XGBoost,LightBoost
+          consistently shows robust performance across most metrics, making them a
           strong candidate for deployment in a real-world resume screening
           system.
         </p>
@@ -165,7 +165,7 @@
           </li>
           <li>
             <strong>Modeling:</strong> Logistic Regression, SVM, Random Forest,
-            XGBoost
+            Tree based Methods
           </li>
           <li>
             <strong>Evaluation:</strong> Accuracy, F1-Score (Macro), Confusion
@@ -176,12 +176,15 @@
 
       <p class="section" id="results">Results</p>
       <div style="text-align: justify">
+
+        <p>
+
           <br>
-              • XGBoost achieved the highest performance across all metrics with 75.4% accuracy, precision,
+              • XGBoost and LightBoost achieved the highest performance across all metrics with 75.4% accuracy, precision,
               recall, and F1-score. This indicates that XGBoost’s gradient boosting approach is highly effective
               for this classification task.
           <br>
-              • Random Forest performed almost as well as XGBoost, with across all metrics. The minimal
+              • Random Forest and Gradient boosting performed almost as well as XGBoost( approx 74% and 68 %), with across all metrics. The minimal
               difference between these two ensemble methods suggests that both are well-suited for resume clas-
               sification.
           <br>
