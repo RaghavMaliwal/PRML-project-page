@@ -175,29 +175,50 @@
       </div>
 
       <p class="section" id="results">Results</p>
-      <div style="text-align: justify">
+<div style="text-align: justify">
+  <p>
+    The experimental results highlight how various machine learning models perform on the resume classification task. Among all, tree-based ensemble methods like XGBoost, LightGBM, and Random Forest perform the best. ANN also shows promising performance, while AdaBoost and Logistic Regression lag behind.
+  </p>
 
-        <p>
+  <!-- Accuracy Table -->
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped text-center">
+      <thead class="thead-dark">
+        <tr>
+          <th>Model</th>
+          <th>Accuracy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>XGBoost</td><td>75.0%</td></tr>
+        <tr><td>LightGBM</td><td>75.0%</td></tr>
+        <tr><td>Random Forest</td><td>74.0%</td></tr>
+        <tr><td>HistGradientBoosting</td><td>74.0%</td></tr>
+        <tr><td>Gradient Boosting</td><td>68.0%</td></tr>
+        <tr><td>ANN</td><td>70.0%</td></tr>
+        <tr><td>AdaBoost</td><td>17.0%</td></tr>
+        <tr><td>Logistic Regression</td><td>61.7%</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-          <br>
-              • XGBoost and LightBoost achieved the highest performance across all metrics with 75.4% accuracy, precision,
-              recall, and F1-score. This indicates that XGBoost’s gradient boosting approach is highly effective
-              for this classification task.
-          <br>
-              • Random Forest and Gradient boosting performed almost as well as XGBoost( approx 74% and 68 %), with across all metrics. The minimal
-              difference between these two ensemble methods suggests that both are well-suited for resume clas-
-              sification.
-          <br>
-              • SVM showed good performance , demonstrating its effectiveness in high-dimensional feature spaces
-              typical of text classification problems.
-          <br>
-              • Logistic Regression, while achieving a respectable 61.7% accuracy, was the least effective among
-              the models tested. This is expected as logistic regression is a simpler model compared to the others.
-              The superior performance of ensemble methods (XGBoost and Random Forest) can be attributed
-              to their ability to handle complex relationships in the feature space derived from resume text. These
-              models can effectively capture the nuanced patterns that distinguish different resume categories without
-              overfitting to the training data.
-        </p>
+  <p>
+    As evident from the results, <b>XGBoost</b> and <b>LightGBM</b> lead with the highest accuracy of 75.0%, followed by <b>Random Forest</b> and <b>HistGradientBoosting</b> at 74.0%. The <b>ANN</b> model achieves 70.0%, while <b>Gradient Boosting</b> stands at 68.0%. <b>Logistic Regression</b> and <b>AdaBoost</b> perform significantly lower, highlighting the effectiveness of ensemble tree methods for this classification task.
+  </p>
+
+  <!-- Accuracy Bar Chart -->
+  <div class="text-center my-4">
+    <img
+      src="model_accuracy_comparison.png"
+      alt="Model Accuracy Comparison"
+      class="img-fluid"
+      style="max-width: 100%; height: auto"
+    />
+    <p class="text-muted" style="font-size: 12pt">
+      Figure: Accuracy comparison across different models used in resume classification.
+    </p>
+  </div>
+</div>
       </div>
 
       <p class="section" id="video">Short Talk</p>
